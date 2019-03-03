@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 	
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+
+<title>Gallery</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Shopping Website</h1>
+</div>
+
+<p>To see jquery effects tap on the below buttons</p>
+<div class="center">
+    <button class="button button1">FadeOut {Mivi}</button>
+    <button class="button button2">FadeToggle {Band}</button>
+    <button class="button button3">SlideUp {Phone}</button>
+    <button class="button button4">SlideToggle {Glasses}</button>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="Images/a.jpg" id="div1"> 
+    <h4>Mivi Conquer</h4>
+    <p>3,299/-</p> 
+  </div>
+
+  <div class="column">
+    <img src="Images/b.jpg" id="div2">
+    <h4>Honor Band 4</h4>
+    <p>2,659/-</p>
+  </div>
+
+  <div class="column">
+    <img src="Images/c.jpg" id="div3"> 
+    <h4>Honor 8X</h4>
+    <p>14,999/-</p>
+  </div>
+  
+  <div class="column">
+    <img src="Images/d.jpg" id="div4">  
+    <h4>Sunglasses</h4>
+    <p>999*/- Onwards</p>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".button1").click(function(){
+    $("#div1").fadeOut();
+
+  });
+});
+    
+$(document).ready(function(){
+  $(".button2").click(function(){
+    $("#div2").fadeToggle();
+
+  });
+});
+    
+$(document).ready(function(){
+  $(".button3").click(function(){
+    $("#div3").slideUp("slow");
+  });
+});
+    
+$(document).ready(function(){
+  $(".button4").click(function(){
+    $("#div4").slideToggle("slow");
+  });
+});
+</script>
+</body>
+</html>
+
